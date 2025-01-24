@@ -1,0 +1,42 @@
+
+All types of locators
+
+1. ID  Selector: Selectes elements based on their id attribute.
+   const element = page.locator('id=my-button');
+
+2. Class Name Selectors : selects tbased on their class name.
+   const element = page.locator('.submit-butto');
+
+3. Text Selector : selects elements that contain specifi text.
+   const element = page.locators('text=submit');
+
+4. CSS Selector : selects elements based on their CSS properties.
+   const element = page.locator('css=button#id');
+
+5. XPath Selector : Selects elements based on XPath query.
+   const element = page.locator('xpath=//button[text()="Sunmmit"]');
+
+
+6. Data-test-id seletcor : selects elements by a custom attribute (data-testid), commonly used in testing.
+
+7. Role Selector : Selects elements by their ARIA Role
+
+8. Combining Selectors Allows combining multiple selectors for more specific targeting.
+
+9. Chaining selectors : enables chaining of multiple selectors to refine the selection.
+
+10. Frame locators : For interacting with elements inside the iframes.
+
+11. attribute Selectors : Selects elements based on any attribute.
+
+12. nth-match selectors : Selects a specific instance of an element among multiple matchs.
+
+13. SVG Selectors : Uses the <svg> html tag to select the perticular svg element.
+
+14. Shadow DOM selectors:
+    - Direct Selector
+    - Piercing Shadow DOM
+
+15. GetByRole : In Playwright get by role selector is used just find a role and give a task checkout 7th types
+    page.getByRole('heading', {name: 'Register Account'}) //here {name: ''yourtext} is a optional parameter
+
