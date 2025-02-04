@@ -40,3 +40,31 @@ All types of locators
 15. GetByRole : In Playwright get by role selector is used just find a role and give a task checkout 7th types
     page.getByRole('heading', {name: 'Register Account'}) //here {name: ''yourtext} is a optional parameter
 
+
+
+
+XPaths:
+Expert
+//input[@name='username]
+//input[@name='password]
+//input[@type='submit' and @value='login']
+
+
+Links
+//a[text()='Features']
+//a[contains(text(),'Features')]
+//a[text()='Alerts']
+
+Buttons
+//button[@type='button']
+//button[@type='button' and @class='btn']
+//button[contains(text(),'Sign Up')]
+
+//dev[@class='dropdown']//button[@type='button' and @class='btn btn-secondary dropdown-toggle and @id='dropdownMenuButton']
+//button[@id='dropdownMenuButton']
+
+Checkbox
+//a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow]//input[@name='contxt_id']
+
+
+
